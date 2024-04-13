@@ -1,0 +1,51 @@
+header{
+    background-color: #362FD9;
+}
+footer{
+    background-color: #99627A;
+}
+body{
+    background-color: #643843;
+}
+h1{
+    font-size: 45px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: #E7CBCB;
+}
+p{
+    font-size: 30px;
+    color: #E7CBCB;
+    font-family: 'Oswald', sans-serif;
+}
+img{
+    height: 250px;
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: #B2533E;
+}
+h2{
+    color: #FCE09B;
+}
+ul, ol{
+    color: #C88EA7;
+    font-size: 22px;
+}
+.Instagram{
+    font-size: 36px;
+    align-items: center;
+    display: flex;
+}
+.numero{
+    display: flex;
+    align-items: center;
+}
+.phone{
+    height: 30px;
+}
+h3{
+    font-size: 42px;
+}
