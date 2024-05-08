@@ -1,22 +1,20 @@
 let Nombre = prompt("Ingrese su nombre"); 
 let Mail = prompt("Ingrese su mail");
 let Contraseña = prompt("Ingrese su contraseña");
-function registro(){
+function registro(Nombre){
     alert("Se ha registrado exitosamente el usuario " + Nombre)
 }
 function inicio(){
     let Mail1 = prompt("ingrese el mail")
     let contraseña1 = prompt("ingrese su contraseña")
-     while (Mail1 =! Mail){
-        alert("Error")
-        let Mail1 = prompt("ingrese el mail")
-    }
-    while (contraseña1 =! Contraseña){
-        alert("Error")
-        let contraseña1 = prompt("ingrese la contraseña")
     if (Mail1 == Mail && contraseña1 == Contraseña){
         alert("¡Hola " + Nombre + ", bienvenido a nuestro sitio!")
-   
+
+    }
+    else {
+        alert("Error en inicio de sesion")
+
+    }
 }
 function Actualizar(){
     let Mail2 = prompt("ingrese el mail")
@@ -33,6 +31,6 @@ function Actualizar(){
     Contraseña = contraseñanueva
     alert("la contraseña fue cambiada exitosamente")
 }
-registro()
+registro(Nombre)
 inicio()
 Actualizar()
