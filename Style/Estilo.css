@@ -13,7 +13,8 @@ header {
     justify-content: space-between;
     padding: 0 10vw; 
     box-sizing: border-box;
-    margin: 0; 
+    margin: 0;
+    transition: transform 0.5s ease; /* Añade una transición para el header */
 }
 
 body, html {
@@ -39,15 +40,17 @@ body {
     padding-bottom: 100px; 
 }
 
-h1 {
+header h1 {
     font-size: 45px;
     font-family: 'Bebas Neue', sans-serif;
     text-align: left;
     color: #E7CBCB;
-    margin: 0; 
-    margin-left: 20px; 
-    flex: 1; 
+    margin: 0;
+    margin-left: 20px;
+    flex: 1;
+    transition: transform 0.5s ease; /* Añade una transición */
 }
+
 
 p {
     font-size: 30px;
@@ -142,6 +145,10 @@ h3 {
     position: relative; 
     display: flex;
     align-items: center;
+    #check:checked ~ .buscar {
+    transform: translateX(250px); /* Desplaza la barra de búsqueda junto con el menú */
+    
+}
 }
 
 .buscar input {
@@ -154,6 +161,7 @@ h3 {
     border: 1px solid black;
     border-radius: 30px;
     transition: all 0.6s ease;
+    
 }
 
 .btn {
@@ -216,8 +224,7 @@ main > .cuadrados {
     background-color: #183D3D;
     padding-left: 0;
     margin: 0;
-    margin-left: -10px; 
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
 .sidebar_title {
@@ -260,29 +267,37 @@ label #btn, label #cancel {
 }
 
 label #btn {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
     left: 40px;
     top: 10px;
-    font-size: 45px;
+    font-size: 50px; /* Ajusta este valor para agrandar el icono del menú */
     color: white;
     padding: 6px 12px;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
+
+
 label #cancel {
+    position: absolute;
+    cursor: pointer;
     z-index: 1111;
-    left: 40px; 
-    top: 25px;
+    left: 30px; /* Ajusta esta propiedad para mover a la derecha */
+    top: 20px; /* Ajusta esta propiedad para mover hacia arriba */
     font-size: 30px;
     color: white;
-    padding: 6px 12px;
-    transition: all .5s;
-    opacity: 0;
-    pointer-events: none;
+    padding: 4px 9px;
+    transition: left 0.5s, opacity 0.5s;
+    opacity: 0; /* Inicialmente oculto */
+    pointer-events: none; /* Inicialmente no interactuable */
 }
 
 #check:checked ~ .menu {
     left: 0;
 }
+
 
 #check:checked ~ label #btn {
     left: 250px;
@@ -291,8 +306,11 @@ label #cancel {
 }
 
 #check:checked ~ label #cancel {
+    left: 260px; /* Ajusta para que aparezca a la derecha cuando esté visible */
+    top: 10px; /* Ajusta para que aparezca más arriba cuando esté visible */
     opacity: 1;
-    pointer-events: auto;
-    left: 175px; 
-    top: 12px;
+    pointer-events: auto; /* Permitir interacción */
+}
+#check:checked ~ header h1 {
+    transform: translateX(250px); /* Desplaza el título junto con el menú */
 }
