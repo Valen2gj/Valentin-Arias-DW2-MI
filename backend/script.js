@@ -1,3 +1,4 @@
+/*
 let nombreProducto = "labial";
 let precioUnitario = 8750;
 let cantidadDeseada = prompt("Ingrese la cantidad deseada");
@@ -12,3 +13,4 @@ else{
     alert("El total es de: $" + precioTotal)
 
 }
+*/
