@@ -14,7 +14,7 @@ header {
     padding: 0 10vw; 
     box-sizing: border-box;
     margin: 0;
-    transition: transform 0.5s ease; /* Añade una transición para el header */
+    transition: transform 0.5s ease;
 }
 
 body, html {
@@ -40,28 +40,22 @@ body {
     padding-bottom: 100px; 
 }
 
-header h1 {
-    font-size: 45px;
-    font-family: 'Bebas Neue', sans-serif;
-    text-align: left;
-    color: #E7CBCB;
+
+header img {
+    height: auto;
+    margin-right: 10px;
     margin: 0;
     margin-left: 20px;
-    flex: 1;
-    transition: transform 0.5s ease; /* Añade una transición */
+    transition: transform 0.5s ease;
 }
 
 
 p {
     font-size: 30px;
     color: #183D3D;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
-img {
-    height: 250px;
-    display: inline;
-}
 
 a {
     text-decoration: none;
@@ -146,7 +140,7 @@ h3 {
     display: flex;
     align-items: center;
     #check:checked ~ .buscar {
-    transform: translateX(250px); /* Desplaza la barra de búsqueda junto con el menú */
+    transform: translateX(250px); 
     
 }
 }
@@ -221,7 +215,7 @@ main > .cuadrados {
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #183D3D;
+    background: linear-gradient(#183D3D, #040D12);
     padding-left: 0;
     margin: 0;
     transition: all 0.5s ease;
@@ -272,7 +266,7 @@ label #btn {
     border-radius: 3px;
     left: 40px;
     top: 10px;
-    font-size: 50px; /* Ajusta este valor para agrandar el icono del menú */
+    font-size: 50px; 
     color: white;
     padding: 6px 12px;
     transition: all 0.5s;
@@ -284,14 +278,14 @@ label #cancel {
     position: absolute;
     cursor: pointer;
     z-index: 1111;
-    left: 30px; /* Ajusta esta propiedad para mover a la derecha */
-    top: 20px; /* Ajusta esta propiedad para mover hacia arriba */
+    left: 30px; 
+    top: 20px; 
     font-size: 30px;
     color: white;
     padding: 4px 9px;
     transition: left 0.5s, opacity 0.5s;
-    opacity: 0; /* Inicialmente oculto */
-    pointer-events: none; /* Inicialmente no interactuable */
+    opacity: 0;
+    pointer-events: none; 
 }
 
 #check:checked ~ .menu {
@@ -306,11 +300,38 @@ label #cancel {
 }
 
 #check:checked ~ label #cancel {
-    left: 260px; /* Ajusta para que aparezca a la derecha cuando esté visible */
-    top: 10px; /* Ajusta para que aparezca más arriba cuando esté visible */
+    left: 260px; 
+    top: 10px; 
     opacity: 1;
-    pointer-events: auto; /* Permitir interacción */
+    pointer-events: auto; 
 }
 #check:checked ~ header h1 {
-    transform: translateX(250px); /* Desplaza el título junto con el menú */
+    transform: translateX(250px); 
 }
+#check:checked ~ header img {
+    transform: translateX(250px); 
+}
+.logoynombre {
+    display: flex;
+    align-items: center; 
+}
+.logoynombre img,
+.logoynombre h1 {
+    width: 70px; 
+}
+
+.logoynombre h1 {
+    margin: 0;
+    margin-left: 20px;
+    flex: 1;
+    transition: transform 0.5s ease; 
+    white-space: nowrap;  
+    font-size: 45px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: left;
+    color: #E7CBCB;
+}
+
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesión</title>
+    <link rel="stylesheet" href="Style\Estilo_Inicio.css">
+    <script src="C:\Users\Valen\Downloads\DW2-ValentinArias-MI\backend\Registro.js"></script>
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img src="Img\logo.png" alt="Logo" ></a>
+    </header>
+
+    <div class="formulario">
+        <h1>Inicio de sesión</h1>
+        <form method="post">
+            <div class="username">
+                <input type="text" id="user" required placeholder=" ">
+                <label for="user">Nombre de usuario</label>
+                <span></span>
+            </div>
+            
+            <div class="password">
+                <input type="password" id="pass" required placeholder=" ">
+                <label for="pass">Contraseña</label>
+                <span></span>
+            </div>
+            
+            <div class="iniciar">
+                <input type="button" value="Iniciar" onclick="loguear()">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

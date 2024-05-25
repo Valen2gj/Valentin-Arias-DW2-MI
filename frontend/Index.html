@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title> document </title>
-    <link rel="stylesheet" href="C:\Users\Valen\Downloads\DW2-ValentinArias-MI\Style\Estilo.css">
+    <link rel="stylesheet" href="Style\Estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,18 +24,22 @@
     <div class="menu">
         <h1 class="sidebar_title">Menu</h1>
         <ul class="menu_lista">
-            <li><a href="#"><ion-icon name="home"></ion-icon>Inicio</a></li>
-            <li><a href="#"><ion-icon name="cart"></ion-icon>Productos</a></li>
-            <li><a href="#"><ion-icon name="help"></ion-icon>Ayuda</a></li>
+            <li><a href="Index.html"><ion-icon name="home"></ion-icon>Inicio</a></li>
+            <li><a href="Productos_claros.html"><ion-icon name="cart"></ion-icon>Productos claros</a></li>
+            <li><a href="Productos_oscuros.html"><ion-icon name="cart"></ion-icon>Productos oscuros</a></li>
+            <li><a href="Ayuda.html"><ion-icon name="help"></ion-icon>Ayuda</a></li>
         </ul>
     </div>
     <header>
-        <h1>Belleza Radiante</h1>
+        <div class="logoynombre">
+            <img src="Img\logo_recortado.png" alt="Logo de Belleza Radiante">
+            <h1>Belleza Radiante</h1>
+        </div>
         <nav>                                 
         </nav>
         <div class="botones">
-            <a class="button">Iniciar Sesión</a>
-            <a class="button">Registrarse</a>
+            <a class="button" href="Inicio_Sesion.html">Iniciar Sesión</a>
+            <a class="button" href="Registro.html">Registrarse</a>
             <div class="buscar">
                 <input type="text" placeholder="Buscar" required>
                 <div class="btn">
@@ -46,7 +50,7 @@
     </header>                                                                                            
     <main>
         
-        <p>En "Belleza Radiante", nos dedicamos a realzar tu belleza natural y resaltar tu confianza a través de una amplia gama de productos de belleza de alta calidad. Nuestra tienda está diseñada para satisfacer todas tus necesidades de cuidado de la piel, maquillaje y productos para el cabello, proporcionando soluciones personalizadas que se adaptan a cada tipo de piel y estilo.
+        <p>En Belleza Radiante nos dedicamos a realzar tu belleza natural y resaltar tu confianza a través de una amplia gama de productos de belleza de alta calidad. Nuestra tienda está diseñada para satisfacer todas tus necesidades de cuidado de la piel, maquillaje y productos para el cabello, proporcionando soluciones personalizadas que se adaptan a cada tipo de piel y estilo.
             Encontrarás en nuestro establecimiento una cuidadosa selección de marcas reconocidas y exclusivas, comprometidas con la excelencia en la industria cosmética. Desde las últimas tendencias hasta los clásicos atemporales, "Belleza Radiante" busca ofrecer a nuestros clientes una experiencia única de compra, donde puedan descubrir productos innovadores que resalten su belleza individual.
         </p>
         <div class="cuadrados">
@@ -93,6 +97,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="C:\Users\Valen\Downloads\DW2-ValentinArias-MI\backend\script.js"></script>
+    <script src="C:\Users\Valen\Downloads\DW2-ValentinArias-MI\backend\Registro.js"></script>
 </body>
 
 </html>
