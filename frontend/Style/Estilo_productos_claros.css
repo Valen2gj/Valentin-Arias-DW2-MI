@@ -306,6 +306,8 @@ main {
     max-width: 100%;
     border-radius: 8px;
     margin-bottom: 15px;
+    background-color: white;
+    height: 300px;
 }
 
 .product-card h2 {
