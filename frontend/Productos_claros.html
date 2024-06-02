@@ -17,6 +17,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container_burbujas">
+        <div class="burbujas">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     <input type="checkbox" id="check">
     <label for="check">
         <ion-icon name="menu" id="btn"></ion-icon>
@@ -38,16 +45,15 @@
         </div>
         <nav>                                 
         </nav>
-        <div class="botones">
-            <a class="button" href="Inicio_Sesion.html">Iniciar Sesión</a>
-            <a class="button" href="Registro.html">Registrarse</a>
-            <div class="buscar">
+        <button id="theme-switch">Cambiar tema</button>
+
+        <div class="buscar">
                 <input type="text" placeholder="Buscar" required>
                 <div class="btn">
                     <ion-icon name="search"></ion-icon>
                 </div>
-            </div>                                                  
-        </div>                                       
+        </div>                                                           
+                                   
     </header>                               
     <main class="container">
         <div class="product-card">
@@ -130,5 +136,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="backend/oscuro_claro.js"></script>
+
 </body>
 </html>

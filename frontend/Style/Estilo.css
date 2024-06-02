@@ -98,6 +98,7 @@ h3 {
     color: white;
     border-radius: 5px;
     opacity: 0.5;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
@@ -436,4 +437,9 @@ footer .grupo1 .box {
 .grupo2 small {
     color: black;
     font-size: 14px; 
+}
+
+.button:hover {
+    box-shadow: 0 0 20px black; 
+    transform: translateY(-5px);
 }

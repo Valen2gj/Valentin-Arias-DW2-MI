@@ -5,7 +5,11 @@ function registrarUsuario() {
     let email = document.getElementById("registro_email").value;
     let contraseña = document.getElementById("registro_pass").value;
     let confirmacion = document.getElementById("registro_confirmPass").value;
-
+    
+    if (!nombre || !email || !contraseña || !confirmacion) {
+        Mensaje("Todos los campos son obligatorios.", "error");
+        return;
+    }
     if (contraseña !== confirmacion) {
         Mensaje("Incompatibilidad en contraseñas", "error");
         return;
@@ -49,4 +53,32 @@ function Mensaje(mensaje, tipo) {
     mensajeDiv.innerText = mensaje;
     mensajeDiv.className = tipo === "success" ? "mensaje-exito" : "mensaje-error";
     mensajeDiv.style.display = "block";
+}
+
+
+// Mostrar/ocultar la contraseña
+function togglePassword(passwordInputId, passwordIconId) {
+    const passwordInput = document.getElementById(passwordInputId);
+    const passwordIcon = document.getElementById(passwordIconId);
+
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        passwordIcon.src = 'Img/eye-outline.png';
+    } else {
+        passwordIcon.src = 'Img/eye-off-outline.png';
+        passwordInput.type = 'password';
+    }
+}
+
+function toggleConfirmPassword(confirmPasswordInputId, confirmPasswordIconId) {
+    const confirmPasswordInput = document.getElementById(confirmPasswordInputId);
+    const confirmPasswordIcon = document.getElementById(confirmPasswordIconId);
+
+    if (confirmPasswordInput.type === 'password') {
+        confirmPasswordInput.type = 'text';
+        confirmPasswordIcon.src = 'Img/eye-outline.png';
+    } else {
+        confirmPasswordInput.type = 'password';
+        confirmPasswordIcon.src = 'Img/eye-off-outline.png';
+    }
 }

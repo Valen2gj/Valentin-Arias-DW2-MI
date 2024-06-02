@@ -56,7 +56,7 @@ form .confirmacion {
 .email input,
 .password input,
 .confirmacion input {
-    width: 100%;
+    width: calc(100% - 30px); /* Ajuste para el ícono */
     padding: 0 5px;
     height: 48px;
     font-size: 16px;
@@ -65,8 +65,20 @@ form .confirmacion {
     outline: none;
     color: white;
     box-shadow: none;
+    padding-right: 30px; 
 }
 
+.password img,
+.confirmacion img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px; 
+    height: 20px; 
+    filter: invert(100%) sepia(0%) saturate(7436%) hue-rotate(167deg) brightness(101%) contrast(108%);
+}
 .username label,
 .email label,
 .password label,

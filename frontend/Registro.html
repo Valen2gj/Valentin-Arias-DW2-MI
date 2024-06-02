@@ -7,6 +7,7 @@
     <title>Registro</title>
     <link rel="stylesheet" href="Style/Estilo_Inicio.css">
     <script src="backend\Registro.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
 </head>
 <body>
     <header>
@@ -25,15 +26,18 @@
                 <input type="text" id="registro_email" required placeholder=" ">
                 <label for="email">Email</label>
                 <span></span>
-            </div>
+            </div>                 
             <div class="password">
                 <input type="password" id="registro_pass" required placeholder=" ">
-                <label for="pass">Contraseña</label>
+                <label for="registro_pass">Contraseña</label>
+                <img id="togglePasswordIcon" class="toggle-password" src="Img/eye-off-outline.png" alt="Toggle Password" onclick="togglePassword('registro_pass', 'togglePasswordIcon')">
                 <span></span>
             </div>
+            
             <div class="confirmacion">
                 <input type="password" id="registro_confirmPass" required placeholder=" ">
-                <label for="confirmPass">Reingrese su contraseña</label>
+                <label for="registro_confirmPass">Confirmar Contraseña</label>
+                <img id="toggleConfirmPasswordIcon" class="toggle-password" src="Img/eye-off-outline.png" alt="Toggle Password" onclick="toggleConfirmPassword('registro_confirmPass', 'toggleConfirmPasswordIcon')">
                 <span></span>
             </div>
             <div class="iniciar">
